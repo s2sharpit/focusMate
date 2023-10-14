@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "FocusMate",
+    "description": "Chrome extension for focused work",
+    "version": "1.0.0",
+    "action": {
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "scripting"
+    ],
+    "content_scripts":[
+        {"matches":["<all_urls>"],
+        "js":["contentScript.js"]}
+    ]
+}
